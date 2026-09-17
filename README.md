@@ -345,7 +345,7 @@ Scaffold vacío por ruta con título + “TODO P3/P4/P5” — **desbloquea para
 ### MÓDULO SHIP — P0 (paralelo desde HORA 0)
 
 1. **Play Console:** ¿cuenta pre-nov 2023? Si no → crear / usar existente
-2. Crear app “Calm” / nombre final TBD
+2. Crear app “Samay” (nombre final confirmado)
 3. Subir **esqueleto AAB Día 1** a Closed Testing
 4. Reclutar **12 testers** (lista WhatsApp) + aceptar invite
 5. Dashboard: confirmar 14-day clock corriendo
