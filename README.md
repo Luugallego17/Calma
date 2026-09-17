@@ -1,4 +1,4 @@
-# Calm — Plan de ejecución Shipaton 2026 (6 personas)
+# Samay — Plan de ejecución Shipaton 2026 (6 personas)
 
 > App Android de contención emocional. Diferenciador = **kit de calma personalizado** (voz real / poema-versículo dominio público / música ambient) que vive **dentro** de Modo Terapia.
 >
@@ -113,7 +113,7 @@ Si falla algo de esta lista, **no hay demo válida**:
 - Offline-first robusto (audios bundled)
 - Codemagic pipeline release
 - Analytics eventos (onboarding complete, therapy start, crisis tap, purchase, help escalate)
-- Deep link `calm://therapy`
+- Deep link `samay://therapy`
 - Multi-select poemas con “Vista previa” pulida
 
 ## P3 — Nice to have
@@ -132,7 +132,7 @@ Si falla algo de esta lista, **no hay demo válida**:
 | **Premium** | **$4.99 / 3 meses** (~$1.67/mes) | Todo lo gratis + kits y contactos **ilimitados** + aviso automático al familiar + biblioteca ampliada |
 
 - UI: link **¿Tenés un código promo?** (gift) entre Free y Premium
-- CTA: **Suscribirse a Premium** → RevenueCat (`calm_premium_quarterly` o equivalente)
+- CTA: **Suscribirse a Premium** → RevenueCat (`samay_premium_quarterly` o equivalente)
 - Disclaimer obligatorio (footer): *“El Modo Terapia y la línea de crisis son siempre gratis. Nada relacionado a tu seguridad queda bloqueado por el plan.”*
 
 **Implicación técnica (ya prevista):** entitlement `premium` en RevenueCat; gates solo en multi-kit, multi-contacto, notify automático, biblioteca extra. **No gatear** Therapy ni Crisis.
@@ -202,17 +202,17 @@ Para **cada** pantalla P0: empty · loading · error · success · disabled · o
 
 ### A. Setup (P0) — YA
 
-1. Crear repo `calm-android`, LICENSE MIT/Apache
-2. Empty Activity, package `com.calm.app`, minSdk 26
+1. Crear repo `samay-android`, LICENSE MIT/Apache
+2. Empty Activity, package `com.samay.app`, minSdk 26
 3. Gradle: Compose BOM, Navigation, Room, DataStore, Media3, RC, OneSignal, Firebase, Sentry
-4. `CalmApplication` stubs (keys en `local.properties`)
+4. `SamayApplication` stubs (keys en `local.properties`)
 5. `AndroidManifest`: RECORD_AUDIO, INTERNET, POST_NOTIFICATIONS
 6. Estructura carpetas exacta de la guía técnica
 
 ### B. Design system code (P0)
 
 1. Theme.kt / Color.kt / Type.kt desde tokens P1 (usar placeholders 2h si P1 no listo)
-2. Componentes stub: CalmButton, CrisisButton, ScreenScaffold
+2. Componentes stub: SamayButton, CrisisButton, ScreenScaffold
 3. Preview Compose de cada componente
 
 ### C. Navegación (P0)
@@ -350,7 +350,7 @@ Scaffold vacío por ruta con título + “TODO P3/P4/P5” — **desbloquea para
 4. Reclutar **12 testers** (lista WhatsApp) + aceptar invite
 5. Dashboard: confirmar 14-day clock corriendo
 6. RevenueCat proyecto + API keys
-7. Producto `calm_premium_quarterly` (o monthly si más simple) en Play
+7. Producto `samay_premium_quarterly` (o monthly si más simple) en Play
 8. Entitlement `premium`, Offering `default`
 9. PaywallScreen Compose + purchase sandbox
 10. Promo codes UI (lista local) → unlock soft (documentar para jueces) **sin saltar RC fraud**; ideal: entitlement promo vía RC o flag DataStore solo debug + RC real para store
@@ -477,7 +477,7 @@ Asume **~15 días** hasta deadline (ajustar fechas reales del equipo).
 | **0:00–0:30** | Journey 8 pantallas en papel/Figma | Crear repo, LICENSE, clone a todos | Definir campos Kit JSON | Buscar 1 audio CC0 lluvia | Lista crisis BO/MX/AR/CO | Login Play Console; check cuenta legacy |
 | **0:30–1:00** | Tokens color/tipo | New project Compose + push | Entity Kit + migración | Probar ExoPlayer sample | Entity Contact | Crear app listing draft |
 | **1:00–2:00** | Wire Home+Therapy hi-fi | NavHost stub 15 rutas | KitDao insert/get | `AudioPlayer` play/stop | `CrisisLines` object | Build debug AAB firmado |
-| **2:00–3:00** | Wire onboarding KitChoose | Theme placeholders + CalmButton | Fake poems list | BreathCircle anim v0 | ContactScreen form mock | **Upload closed testing + enviar 12 invites** |
+| **2:00–3:00** | Wire onboarding KitChoose | Theme placeholders + SamayButton | Fake poems list | BreathCircle anim v0 | ContactScreen form mock | **Upload closed testing + enviar 12 invites** |
 
 **Al minuto 180 debe existir:** repo común, navegación stub, clock Play corriendo.
 
@@ -748,4 +748,4 @@ Estados: 🔴 BLOQUEADO · ⚪ NO INICIADO · 🟡 EN PROGRESO · 🔵 EN REVIEW
 
 ---
 
-*Documento generado para ejecución real de hackathon · Calm / Shipaton 2026*
+*Documento generado para ejecución real de hackathon · Samay / Shipaton 2026*

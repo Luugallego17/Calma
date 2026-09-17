@@ -1,4 +1,4 @@
-package com.calm.appcalma.ui.theme
+package com.samay.app.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.lightColorScheme
@@ -15,7 +15,7 @@ private val LightColors = lightColorScheme(
 )
 
 @Composable
-fun AppCalmaTheme(content: @Composable () -> Unit) {
+fun SamayTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colorScheme = LightColors,
         content = content

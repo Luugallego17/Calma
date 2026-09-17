@@ -13,11 +13,11 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.calm.appcalma"
+    namespace = "com.samay.app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.calm.appcalma"
+        applicationId = "com.samay.app"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

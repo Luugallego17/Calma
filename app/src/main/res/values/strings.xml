@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calm</string>
+    <string name="app_name">Samay</string>
     <string name="welcome_title">Un lugar para respirar</string>
     <string name="welcome_subtitle">Tu kit personal para los momentos difíciles. Sin buscar, sin pensar — solo accionar.</string>
     <string name="welcome_cta">Empezar</string>
     <string name="skeleton_badge">Esqueleto Play · v0.1</string>
-    <string name="disclaimer">Calm no es un servicio médico ni de emergencia. Si estás en crisis, contactá una línea de ayuda local.</string>
+    <string name="disclaimer">Samay no es un servicio médico ni de emergencia. Si estás en crisis, contactá una línea de ayuda local.</string>
     <string name="crisis_hint">Línea de crisis (próximamente en esta build)</string>
 </resources>

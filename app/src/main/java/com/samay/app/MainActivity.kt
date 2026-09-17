@@ -1,4 +1,4 @@
-package com.calm.appcalma
+package com.samay.app
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -31,14 +31,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.calm.appcalma.ui.theme.AppCalmaTheme
+import com.samay.app.ui.theme.SamayTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            AppCalmaTheme {
+            SamayTheme {
                 Surface(modifier = Modifier.fillMaxSize()) {
                     WelcomeSkeletonScreen()
                 }
@@ -70,7 +70,7 @@ fun WelcomeSkeletonScreen(
         ) {
             Column(horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
-                    text = "CALM",
+                    text = "SAMAY",
                     color = ForestGreen,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.SemiBold,
@@ -155,7 +155,7 @@ fun WelcomeSkeletonScreen(
 @Preview(showBackground = true)
 @Composable
 private fun WelcomePreview() {
-    AppCalmaTheme {
+    SamayTheme {
         WelcomeSkeletonScreen()
     }
 }
