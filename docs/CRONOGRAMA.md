@@ -3,8 +3,15 @@
 > Este documento **no cambia** el plan del `README.md`; le pone nombres, fechas e issues.
 > Tablero vivo: issue [#7](https://github.com/Luugallego17/Samay/issues/7).
 
-**Día 0 = jue 17 sep 2026 · Feature freeze = mar 29 sep (Día 12) · Demo freeze = mié 30 sep (Día 13) · Submit = jue 1 – vie 2 oct (Día 14–15).**
-Clock Play: AAB subido el 17 sep → 14 días cumplidos el **jue 1 oct**.
+> ### ⚠️ Corrección por reglas oficiales Shipaton 2026
+> - **Deadline real: mié 30 sep 2026, 11:45 PM Pacífico** (= jue 1 oct 2:45 AM Bolivia). NO 1–2 oct. Este cronograma manda sobre las fechas del README §13.
+> - **Entregable = PRODUCCIÓN pública** en Google Play; el closed testing no cuenta.
+> - **Cuenta de Play vieja (>1 año)** → sin regla de 14 días, se va a producción directo (meta live ≤ 28 sep).
+> - **RevenueCat SDK con ≥1 compra** = requisito de elegibilidad.
+> - **Next Gen (estudiantes)** = plan B sin tienda (video + repo + correo .edu).
+
+**Día 0 = jue 17 sep 2026 · Feature freeze = dom 27 sep · Producción pública live ≤ lun 28 sep · DEADLINE submit = mié 30 sep 2026, 11:45 PM PT.**
+Cuenta de Play vieja → **sin regla de 14 días**: se sube a closed testing para validar y se **promueve a producción directo**. El closed testing no cuenta como lanzamiento público para el Shipaton.
 
 ## Equipo
 
@@ -29,14 +36,12 @@ Clock Play: AAB subido el 17 sep → 14 días cumplidos el **jue 1 oct**.
 | 5 | mar 22 sep | QA visual device | G1 E2E QA | fixes C · apoyo G1 | D3 (fin) · D5 (fin) · H2 TherapyEnd | apoyo G1 | F4 · F8 |
 | 6 | mié 23 sep | storyboard video | G1 | fixes | H2 | fixes | F4 · F8 |
 | 7 | jue 24 sep | storyboard | G1 (**CP4**) | fixes | H2 (P0 TherapyEnd listo) | fixes | F4 sandbox OK (**CP4**) · F8 |
-| 8 | vie 25 sep | B4 icon+screenshots | H3 i18n · ayuda F6 | H1 KitSettings | H2 Estás acompañado | E4 notif · E5 Firebase | F6 Codemagic+Sentry · F8 |
-| 9 | sáb 26 sep | B4 | H3 | H1 | H2 | E4 · E5 | F6 · F8 |
-| 10 | dom 27 sep | B4 (fin) · listing | H3 (fin) | H1 (fin) | H2 (fin) | E4 (fin) · E5 | F6 (fin) · F8 |
-| 11 | lun 28 sep | QA edge cases | QA edge cases | QA edge cases | QA edge cases | E5 (corte) · QA | F5 promo codes · F8 |
-| 12 | mar 29 sep | **FREEZE** · polish visual | **FREEZE** · release candidate | bugs P0 | bugs P0 | bugs P0 | F5 (fin) · **FREEZE** · F8 |
-| 13 | mié 30 sep | assets video · posts | backup técnico | bugs P0 | demo en vivo (grabación) | bugs P0 | **F7 video** · production track si clock OK · F8 |
-| 14 | jue 1 oct | pitch (problema) | pitch (tech) | apoyo Devpost | ensayo demo | pitch (safety) | F7 Devpost · clock 14 días cumplido · F8 |
-| 15 | vie 2 oct | ensayo pitch | ensayo pitch | ensayo pitch | ensayo pitch | ensayo pitch | **F7 submit** · backup APK · F8 |
+| 8 | vie 25 sep | B4 icon+screenshots | H3 i18n · ayuda F6 | H1 KitSettings | H2 Estás acompañado | E4 notif · E5 Firebase | F3/F4 RevenueCat real · F6 · F8 |
+| 9 | sáb 26 sep | B4 (fin) · listing | H3 (fin) | H1 (fin) | H2 (fin) | E4 (fin) · E5 | F4 sandbox OK · F5 promo codes · F8 |
+| 10 | dom 27 sep | polish visual | **FEATURE FREEZE** · release candidate | bugs P0 | bugs P0 | E5 (corte) · bugs P0 | F5 (fin) · **FREEZE** · F8 |
+| 11 | lun 28 sep | assets/storyboard video | backup técnico · verificar producción | bugs P0 | demo en vivo (grabación) | bugs P0 | **F1/F2 PRODUCCIÓN pública live** · **F7 video** · demo freeze · F8 |
+| 12 | mar 29 sep | posts finales | fix issues de producción | apoyo Devpost | ensayo demo | apoyo | F7 Devpost (borrador) · confirmar link público · F8 |
+| 13 | **mié 30 sep** | pitch (problema) | pitch (tech) | apoyo | ensayo | pitch (safety) | **F7 SUBMIT antes de 11:45pm PT** · backup APK · F8 |
 
 ## Tareas (README §26 → issues)
 
@@ -71,10 +76,10 @@ Clock Play: AAB subido el 17 sep → 14 días cumplidos el **jue 1 oct**.
 | F4 | [#36](https://github.com/Luugallego17/Samay/issues/36) | PaywallScreen + sandbox | P6 Adriana | P0 | dom 20 sep | jue 24 sep | 4h | A3 F3 B3 | F5 H1 E5 G1 |
 | F5 | [#37](https://github.com/Luugallego17/Samay/issues/37) | Promo codes jueces | P6 Adriana | P1 | lun 28 sep | mar 29 sep | 2h | F4 C4 | F7 |
 | F6 | [#38](https://github.com/Luugallego17/Samay/issues/38) | Codemagic + Sentry | P6 Adriana (+P2) | P2 | vie 25 sep | dom 27 sep | 3h | A2 | — |
-| F7 | [#39](https://github.com/Luugallego17/Samay/issues/39) | Video 2 min + Devpost + submit | P6 Adriana | P0 | mié 30 sep | vie 2 oct | 6h | G1 G2 B4 F2 | submit |
-| F8 | [#40](https://github.com/Luugallego17/Samay/issues/40) | #BuildInPublic ≥1 post/día | P6 Adriana (+P1) | P1 | jue 17 sep | vie 2 oct | diario | — | BIP |
+| F7 | [#39](https://github.com/Luugallego17/Samay/issues/39) | Video 2 min + Devpost + submit | P6 Adriana | P0 | lun 28 sep | **mié 30 sep** | 6h | G1 G2 B4 F1 F2 | submit |
+| F8 | [#40](https://github.com/Luugallego17/Samay/issues/40) | #BuildInPublic ≥1 post/día | P6 Adriana (+P1) | P1 | jue 17 sep | **mié 30 sep** | diario | — | BIP |
 | G1 | [#41](https://github.com/Luugallego17/Samay/issues/41) | E2E QA checklist device real | P2 Alicia (A: P6) | P0 | mar 22 sep | jue 24 sep | 4h | C5 D3 D5 E2 F4 | B4 F7 G2 |
-| G2 | [#43](https://github.com/Luugallego17/Samay/issues/43) | Feature freeze + demo freeze | Todos | P0 | lun 28 sep | mar 29 sep | — | G1 | F7 |
+| G2 | [#43](https://github.com/Luugallego17/Samay/issues/43) | Feature freeze + demo freeze | Todos | P0 | dom 27 sep | dom 27 sep | — | G1 | F7 |
 | H1 | [#21](https://github.com/Luugallego17/Samay/issues/21) | KitSettings + gate multi-kit Premium | P3 Luna | P1 | vie 25 sep | dom 27 sep | 4h | C5 F4 | — |
 | H2 | [#27](https://github.com/Luugallego17/Samay/issues/27) | TherapyEnd + "Estás acompañado" | P4 Karen | P0/P1 | mar 22 sep | dom 27 sep | 4h | D3 E2 D5 | F7 |
 | H3 | [#42](https://github.com/Luugallego17/Samay/issues/42) | i18n ES/EN + back stack | P2 Alicia | P1 | vie 25 sep | dom 27 sep | 4h | A3 B3 C2 | — |
@@ -89,29 +94,29 @@ H1–H3 no están en la tabla §26 del README; salen de §13 (Día 8–10), §3 
 | CP2 | vie 18 sep | Vertical stub Therapy + Crisis | #22 #29 |
 | CP3 | dom 20 sep | Onboarding → Therapy con kit real | #20 #24 |
 | CP4 | jue 24 sep | MVP P0 E2E + paywall sandbox | #41 #36 |
-| CP5 | mar 29 sep | **Feature freeze** | #43 |
-| CP6 | mié 30 sep | **Demo freeze** | #39 |
-| CP7 | vie 2 oct | Submit: Devpost + video + repo + store o Next Gen | #39 |
+| CP5 | dom 27 sep | **Feature freeze** | #43 |
+| CP6 | lun 28 sep | **Producción pública live** + demo freeze | #33 #39 |
+| CP7 | mié 30 sep | **Submit Devpost**: link producción + video + repo | #39 |
 
 **Daily 10 min** (Ayer / Hoy / Bloqueo / Ayuda): dueño rotativo Alicia (P2) / Adriana (P6).
 
 ## Ruta crítica y bloqueadores
 
-- **Ruta crítica:** A1 → A2 → A3 → C4 → C5 → D3 → G1 → G2 → F7.
-- **Bloqueadores #1:** A1/A2 (#8 #9), F1/F2 (#33 #34), A3 (#10). Si el jue 17 sep no hay AAB en closed testing, el production track no llega y la categoría principal pasa a Next Gen.
+- **Ruta crítica:** A1 → A2 → A3 → C4 → C5 → D3 → F4 (RevenueCat compra real) → G1 → G2 → **F1/F2 producción pública** → F7 (submit 30 sep).
+- **Bloqueadores #1:** A1/A2 (#8 #9), A3 (#10), **F4 RevenueCat con ≥1 compra** (#36, requisito de elegibilidad), **F1/F2 producción pública** (#33 #34). Si no hay producción pública antes del 30 sep, la categoría principal se pierde y queda Next Gen (video + repo + .edu).
 - **Regla anti-cuello:** P3–P6 arrancan con mocks; P2 publica theme + stubs el Día 0–1; P1 entrega tokens el Día 1.
 
 ## Milestones (fecha límite = fin de fase)
 
 | Milestone | Límite | Issues |
 |-----------|--------|--------|
-| [Día 0–1 · Fundación + Play clock](https://github.com/Luugallego17/Samay/milestone/2) | vie 18 sep | A1 A2 A3 A4 B1 B2 C1 C2 D1 F1 |
+| [Día 0–1 · Fundación + AAB closed testing](https://github.com/Luugallego17/Samay/milestone/2) | vie 18 sep | A1 A2 A3 A4 B1 B2 C1 C2 D1 F1 |
 | [Día 2–4 · Core P0](https://github.com/Luugallego17/Samay/milestone/3) | lun 21 sep | B3 C3 C4 C5 D2 D4 E1 E2 E3 F2 F3 |
 | [Día 5–7 · Integración E2E](https://github.com/Luugallego17/Samay/milestone/4) | jue 24 sep | D3 D5 F4 G1 |
-| [Día 8–10 · P1 selectivo + store](https://github.com/Luugallego17/Samay/milestone/5) | dom 27 sep | B4 H1 H2 E4 F6 H3 |
-| [Día 11–12 · QA + Feature freeze](https://github.com/Luugallego17/Samay/milestone/6) | mar 29 sep | E5 F5 G2 |
-| [Día 13 · Polish + video](https://github.com/Luugallego17/Samay/milestone/7) | mié 30 sep | (grabación, dentro de F7) |
-| [Día 14–15 · Submit](https://github.com/Luugallego17/Samay/milestone/8) | vie 2 oct | F7 F8 |
+| [Día 8–9 · P1 selectivo + store + RevenueCat real](https://github.com/Luugallego17/Samay/milestone/5) | sáb 26 sep | B4 H1 H2 E4 F6 H3 F3 F4 F5 |
+| [Día 10–11 · QA + Feature freeze](https://github.com/Luugallego17/Samay/milestone/6) | dom 27 sep | E5 G2 |
+| [Día 12 · PRODUCCIÓN pública + demo freeze](https://github.com/Luugallego17/Samay/milestone/7) | lun 28 sep | F1 F2 (producción live) + grabación |
+| [Día 13–14 · Submit Devpost](https://github.com/Luugallego17/Samay/milestone/8) | **mié 30 sep** | F7 F8 |
 
 Cada issue está en el milestone de la fase en que **termina**. Vista por persona: filtrar por label `persona:*`; vista por semana: pestaña Milestones.
 
