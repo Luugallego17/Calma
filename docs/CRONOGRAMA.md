@@ -10,12 +10,12 @@ Clock Play: AAB subido el 17 sep → 14 días cumplidos el **jue 1 oct**.
 
 | | Persona | Rol (README §4) | Epic | Rama |
 |--|---------|-----------------|------|------|
-| P1 | Paola Quinteros | UX/UI + design system | [#1](https://github.com/Luugallego17/Calma/issues/1) | `design/tokens` |
-| P2 | Alicia Belaunde | Arquitectura Compose + nav + QA E2E + merge owner | [#2](https://github.com/Luugallego17/Calma/issues/2) | `feat/p2-nav` |
+| P1 | Paola Quinteros (@PaoRose) | UX/UI + design system | [#1](https://github.com/Luugallego17/Calma/issues/1) | `design/tokens` |
+| P2 | Alicia Belaunde (usuario GitHub pendiente) | Arquitectura Compose + nav + QA E2E + merge owner | [#2](https://github.com/Luugallego17/Calma/issues/2) | `feat/p2-nav` |
 | P3 | Luna Gallego (@Luugallego17) | Onboarding + Kit + persistencia | [#3](https://github.com/Luugallego17/Calma/issues/3) | `feat/p3-onboarding` |
-| P4 | Karen Landivar | Modo Terapia + audio + voz | [#4](https://github.com/Luugallego17/Calma/issues/4) | `feat/p4-therapy` |
-| P5 | Belen Mejia | Crisis + contactos + OneSignal/Firebase | [#5](https://github.com/Luugallego17/Calma/issues/5) | `feat/p5-crisis` |
-| P6 | Adriana Hernandez | RevenueCat + Play + ship + demo | [#6](https://github.com/Luugallego17/Calma/issues/6) | `feat/p6-revenuecat` |
+| P4 | Karen Landivar (@Karenlz20) | Modo Terapia + audio + voz | [#4](https://github.com/Luugallego17/Calma/issues/4) | `feat/p4-therapy` |
+| P5 | Belen Mejia (@belenmejia07) | Crisis + contactos + OneSignal/Firebase | [#5](https://github.com/Luugallego17/Calma/issues/5) | `feat/p5-crisis` |
+| P6 | Adriana Hernandez (@AHS-Hernandez) | RevenueCat + Play + ship + demo | [#6](https://github.com/Luugallego17/Calma/issues/6) | `feat/p6-revenuecat` |
 
 ## Calendario por día
 
@@ -100,6 +100,20 @@ H1–H3 no están en la tabla §26 del README; salen de §13 (Día 8–10), §3 
 - **Ruta crítica:** A1 → A2 → A3 → C4 → C5 → D3 → G1 → G2 → F7.
 - **Bloqueadores #1:** A1/A2 (#8 #9), F1/F2 (#33 #34), A3 (#10). Si el jue 17 sep no hay AAB en closed testing, el production track no llega y la categoría principal pasa a Next Gen.
 - **Regla anti-cuello:** P3–P6 arrancan con mocks; P2 publica theme + stubs el Día 0–1; P1 entrega tokens el Día 1.
+
+## Milestones (fecha límite = fin de fase)
+
+| Milestone | Límite | Issues |
+|-----------|--------|--------|
+| [Día 0–1 · Fundación + Play clock](https://github.com/Luugallego17/Calma/milestone/2) | vie 18 sep | A1 A2 A3 A4 B1 B2 C1 C2 D1 F1 |
+| [Día 2–4 · Core P0](https://github.com/Luugallego17/Calma/milestone/3) | lun 21 sep | B3 C3 C4 C5 D2 D4 E1 E2 E3 F2 F3 |
+| [Día 5–7 · Integración E2E](https://github.com/Luugallego17/Calma/milestone/4) | jue 24 sep | D3 D5 F4 G1 |
+| [Día 8–10 · P1 selectivo + store](https://github.com/Luugallego17/Calma/milestone/5) | dom 27 sep | B4 H1 H2 E4 F6 H3 |
+| [Día 11–12 · QA + Feature freeze](https://github.com/Luugallego17/Calma/milestone/6) | mar 29 sep | E5 F5 G2 |
+| [Día 13 · Polish + video](https://github.com/Luugallego17/Calma/milestone/7) | mié 30 sep | (grabación, dentro de F7) |
+| [Día 14–15 · Submit](https://github.com/Luugallego17/Calma/milestone/8) | vie 2 oct | F7 F8 |
+
+Cada issue está en el milestone de la fase en que **termina**. Vista por persona: filtrar por label `persona:*`; vista por semana: pestaña Milestones.
 
 ## Labels del repo
 

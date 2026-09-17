@@ -4,12 +4,12 @@
 
 - `main` protegida — 1 review ideal; si no hay tiempo, pair merge.
 - Una rama por vertical:
-  - `feat/p2-nav` — Alicia (P2)
-  - `feat/p3-onboarding` — Luna (P3)
-  - `feat/p4-therapy` — Karen (P4)
-  - `feat/p5-crisis` — Belen (P5)
-  - `feat/p6-revenuecat` — Adriana (P6)
-  - `design/tokens` — Paola (P1)
+  - `feat/p2-nav` — Alicia (P2, usuario pendiente)
+  - `feat/p3-onboarding` — Luna @Luugallego17 (P3)
+  - `feat/p4-therapy` — Karen @Karenlz20 (P4)
+  - `feat/p5-crisis` — Belen @belenmejia07 (P5)
+  - `feat/p6-revenuecat` — Adriana @AHS-Hernandez (P6)
+  - `design/tokens` — Paola @PaoRose (P1)
 - PR pequeño (< 400 líneas) cuando se pueda. Merge **≥ 1 por día** a `main`.
 
 ## Commits
