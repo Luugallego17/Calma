@@ -1,4 +1,4 @@
-# Guía para Luu — Esqueleto Android (Closed Testing Play)
+# Guía — Esqueleto Android (Closed Testing Play)
 
 Este repositorio incluye el **esqueleto Android** listo para subir a **Google Play Closed Testing**. El README principal del repo (plan Shipaton) **no se modifica**; esta guía es solo para el esqueleto y la publicación.
 
@@ -6,7 +6,7 @@ Este repositorio incluye el **esqueleto Android** listo para subir a **Google Pl
 
 | Campo | Valor |
 |--------|--------|
-| **applicationId** | `com.calm.appcalma` |
+| **applicationId** | `com.samay.app` |
 | **versionCode** | `1` |
 | **versionName** | `0.1.0-skeleton` |
 
@@ -14,7 +14,7 @@ Este repositorio incluye el **esqueleto Android** listo para subir a **Google Pl
 
 ## Qué incluye el esqueleto
 
-- Package / applicationId: `com.calm.appcalma`
+- Package / applicationId: `com.samay.app`
 - UI: Jetpack Compose (pantalla Welcome + disclaimer)
 - SDK: minSdk 26 · targetSdk 34
 
@@ -35,7 +35,7 @@ Este repositorio incluye el **esqueleto Android** listo para subir a **Google Pl
 
 ## Closed Testing en Google Play
 
-1. Crea (o usa) la app en Play Console con el mismo **applicationId** `com.calm.appcalma`.
+1. Crea (o usa) la app en Play Console con el mismo **applicationId** `com.samay.app`.
 2. Sube el AAB a una pista de **Closed testing**.
 3. Requisito del challenge: **12 testers** activos durante **14 días**.
 4. Invita a los testers, confirma que aceptan y que pueden instalar/abrir la app.
