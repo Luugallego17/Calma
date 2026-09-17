@@ -1,9 +1,11 @@
-# Android / Gradle
 *.iml
 .gradle/
-build/
+/local.properties
+/.idea/
+.DS_Store
+/build/
 /captures/
-.externalNativeBuild/
+.externalNativeBuild
 .cxx/
 *.apk
 *.aab
@@ -13,19 +15,7 @@ build/
 bin/
 gen/
 out/
-
-# Secrets — nunca en git (README §19)
-local.properties
+keystore.properties
 *.keystore
 *.jks
-google-services.json
-keystore.properties
-
-# IDE
-.idea/
-*.swp
-.DS_Store
-.vscode/
-
-# Logs
-*.log
+app/release/
