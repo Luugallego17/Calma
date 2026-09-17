@@ -1,0 +1,9 @@
+# Copiá este archivo como local.properties (que NO va a git) y completá los valores.
+# Android Studio suele generar sdk.dir automáticamente.
+
+# Ruta del SDK de Android (Android Studio la pone sola; ejemplo Windows):
+# sdk.dir=C:\\Users\\TU_USUARIO\\AppData\\Local\\Android\\Sdk
+
+# API key pública de RevenueCat (Project settings → API keys → Google Play).
+# Empieza con goog_. Sin esto, la app corre pero RevenueCat queda desactivado.
+revenuecat.apiKey=goog_XXXXXXXXXXXXXXXXXXXXXXXX

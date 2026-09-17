@@ -49,6 +49,16 @@ Dueña: Adriana (P6). El README (plan Shipaton) no se toca; esto es solo la publ
 3. Esperá la revisión de Google y confirmá que la app quedó **pública y descargable por cualquiera** (probá con una cuenta que no sea tester).
 4. Guardá el **link público** de la ficha para el Devpost (F7/#39).
 
+
+## RevenueCat (requisito de elegibilidad)
+
+El SDK ya está integrado en el repo (dependencia + `SamayApp` que llama `Purchases.configure`). Para activarlo:
+
+1. Creá el proyecto en RevenueCat y copiá la **API key pública de Google Play** (empieza con `goog_`).
+2. En tu `local.properties` (no va a git) agregá: `revenuecat.apiKey=goog_...` — ver `local.properties.example`.
+3. Creá el producto en Play (`samay_premium_quarterly`), el entitlement `premium` y el Offering `default` en RevenueCat.
+4. El paywall y la compra se implementan en F4 (#36). Requisito Shipaton: la app pública debe tener **≥1 compra in-app vía RevenueCat**.
+
 ## Seguimiento (completar del dashboard — no inventar fechas)
 
 | Campo | Valor |

@@ -12,6 +12,15 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
+// API keys locales (nunca en git). Definí en local.properties:
+//   revenuecat.apiKey=goog_XXXXXXXXXXXX
+val localPropertiesFile = rootProject.file("local.properties")
+val localProperties = Properties()
+if (localPropertiesFile.exists()) {
+    localProperties.load(FileInputStream(localPropertiesFile))
+}
+val revenueCatApiKey: String = (localProperties["revenuecat.apiKey"] as String?) ?: ""
+
 android {
     namespace = "com.samay.app"
     compileSdk = 34
@@ -23,6 +32,9 @@ android {
         versionCode = 1
         versionName = "0.1.0-skeleton"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // RevenueCat: la key viaja como BuildConfig, leída de local.properties (fuera de git).
+        buildConfigField("String", "REVENUECAT_API_KEY", "\"$revenueCatApiKey\"")
     }
 
     signingConfigs {
@@ -62,6 +74,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.5.14"
@@ -84,6 +97,10 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
+
+    // RevenueCat — requisito de elegibilidad Shipaton (≥1 compra in-app).
+    // Core SDK. El paywall en Compose (purchases-ui) lo agrega F4 si se usa RevenueCat Paywalls.
+    implementation("com.revenuecat.purchases:purchases:8.10.0")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
