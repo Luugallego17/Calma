@@ -1,10 +1,11 @@
+import java.util.Properties
+import java.io.FileInputStream
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("com.google.devtools.ksp")
 }
-
-import java.util.Properties
-import java.io.FileInputStream
 
 val keystorePropertiesFile = rootProject.file("keystore.properties")
 val keystoreProperties = Properties()
@@ -32,8 +33,6 @@ android {
         versionCode = 1
         versionName = "0.1.0-skeleton"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-        // RevenueCat: la key viaja como BuildConfig, leída de local.properties (fuera de git).
         buildConfigField("String", "REVENUECAT_API_KEY", "\"$revenueCatApiKey\"")
     }
 
@@ -98,9 +97,29 @@ dependencies {
     implementation("androidx.compose.material3:material3")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.2")
 
-    // RevenueCat — requisito de elegibilidad Shipaton (≥1 compra in-app).
-    // Core SDK. El paywall en Compose (purchases-ui) lo agrega F4 si se usa RevenueCat Paywalls.
+    // RevenueCat
     implementation("com.revenuecat.purchases:purchases:8.10.0")
+
+    // Navigation Compose (NavHost + rutas) — lo usa P2 en A3
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+
+    // DataStore (flags onboarding, idioma, país) — lo usa P3
+    implementation("androidx.datastore:datastore-preferences:1.1.1")
+
+    // Media3 / ExoPlayer (audio del kit) — lo usa P4
+    implementation("androidx.media3:media3-exoplayer:1.3.1")
+    implementation("androidx.media3:media3-ui:1.3.1")
+
+    // OneSignal (push) — lo usa P5
+    implementation("com.onesignal:OneSignal:5.1.6")
+
+    // Sentry (crash reporting) — cola P2
+    implementation("io.sentry:sentry-android:7.14.0")
+
+    // Room (base de datos local: Kit, Contact) — lo usan P3 y P5
+    implementation("androidx.room:room-runtime:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    ksp("androidx.room:room-compiler:2.6.1")
 
     debugImplementation("androidx.compose.ui:ui-tooling")
 }
