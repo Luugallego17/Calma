@@ -1,0 +1,66 @@
+{
+  "poems": [
+    {
+      "id": "salmo23",
+      "title": "Salmo 23",
+      "author": "Anónimo (texto bíblico)",
+      "text": "Jehová es mi pastor; nada me faltará.\nEn lugares de delicados pastos me hará descansar;\njunto a aguas de reposo me pastoreará.\nConfortará mi alma.",
+      "source": "Reina-Valera 1909 (dominio público)",
+      "license": "Public Domain",
+      "verified": false,
+      "note": "Confirmar el texto exacto contra una edición RVR1909; evitar RVR1960 (con copyright)."
+    },
+    {
+      "id": "salmo121",
+      "title": "Salmo 121",
+      "author": "Anónimo (texto bíblico)",
+      "text": "Alzaré mis ojos a los montes, de donde vendrá mi socorro.\nMi socorro viene de Jehová, que hizo los cielos y la tierra.",
+      "source": "Reina-Valera 1909 (dominio público)",
+      "license": "Public Domain",
+      "verified": false,
+      "note": "Confirmar contra edición RVR1909."
+    },
+    {
+      "id": "marti-rosa-blanca",
+      "title": "Cultivo una rosa blanca",
+      "author": "José Martí (1853–1895)",
+      "text": "Cultivo una rosa blanca,\nen junio como en enero,\npara el amigo sincero\nque me da su mano franca.",
+      "source": "Versos sencillos (1891). Autor fallecido en 1895 → dominio público.",
+      "license": "Public Domain",
+      "verified": false,
+      "note": "Verificar la estrofa exacta."
+    },
+    {
+      "id": "machado-caminante",
+      "title": "Caminante",
+      "author": "Antonio Machado (1875–1939)",
+      "text": "Caminante, son tus huellas\nel camino y nada más;\ncaminante, no hay camino,\nse hace camino al andar.",
+      "source": "Proverbios y cantares (Campos de Castilla). Autor fallecido en 1939 → dominio público.",
+      "license": "Public Domain",
+      "verified": false,
+      "note": "Verificar la estrofa exacta."
+    },
+    {
+      "id": "nervo-en-paz",
+      "title": "En paz (fragmento)",
+      "author": "Amado Nervo (1870–1919)",
+      "text": "Muy cerca de mi ocaso, yo te bendigo, Vida,\nporque nunca me diste ni esperanza fallida,\nni trabajos injustos, ni pena inmerecida.",
+      "source": "Elevación (1917). Autor fallecido en 1919 → dominio público.",
+      "license": "Public Domain",
+      "verified": false,
+      "note": "Verificar el fragmento exacto."
+    }
+  ],
+  "music": [
+    {
+      "id": "rain",
+      "title": "Lluvia suave",
+      "author": "—",
+      "rawResName": "rain",
+      "source": "PENDIENTE: audio CC0 (coordinar con P4/D1). Documentar la fuente aquí.",
+      "license": "CC0",
+      "verified": false,
+      "note": "Colocar el archivo en app/src/main/res/raw/rain.mp3 y confirmar licencia CC0."
+    }
+  ]
+}
