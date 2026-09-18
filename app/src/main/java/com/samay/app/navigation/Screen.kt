@@ -13,7 +13,6 @@ sealed class Screen(val route: String) {
     data object CrisisConfirm : Screen("crisis_confirm")
     data object ConfirmReady : Screen("confirm_ready")
 
-    // App principal
     data object Home : Screen("home")
     data object Therapy : Screen("therapy")
     data object TherapyEnd : Screen("therapy_end")

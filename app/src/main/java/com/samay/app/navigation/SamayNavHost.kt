@@ -21,58 +21,58 @@ fun SamayNavHost(
                 onNext = { navController.navigate(Screen.LangSelect.route) })
         }
         composable(Screen.LangSelect.route) {
-            PlaceholderScreen("Idioma", "P3",
+            PlaceholderScreen("Language", "P3",
                 onNext = { navController.navigate(Screen.KitChoose.route) })
         }
         composable(Screen.KitChoose.route) {
-            PlaceholderScreen("Elegir kit", "P3",
+            PlaceholderScreen("Choose kit", "P3",
                 onNext = { navController.navigate(Screen.Contact.route) })
         }
         composable(Screen.KitVoice.route) {
-            PlaceholderScreen("Kit: Voz", "P3")
+            PlaceholderScreen("Kit: Voice", "P3")
         }
         composable(Screen.KitPoems.route) {
-            PlaceholderScreen("Kit: Poemas", "P3")
+            PlaceholderScreen("Kit: Poems", "P3")
         }
         composable(Screen.KitMusic.route) {
-            PlaceholderScreen("Kit: Música", "P3")
+            PlaceholderScreen("Kit: Music", "P3")
         }
         composable(Screen.Contact.route) {
-            PlaceholderScreen("Persona de confianza", "P5",
+            PlaceholderScreen("Trusted person", "P5",
                 onNext = { navController.navigate(Screen.CrisisConfirm.route) })
         }
         composable(Screen.CrisisConfirm.route) {
-            PlaceholderScreen("Línea de crisis / país", "P5",
+            PlaceholderScreen("Crisis line / country", "P5",
                 onNext = { navController.navigate(Screen.ConfirmReady.route) })
         }
         composable(Screen.ConfirmReady.route) {
-            PlaceholderScreen("Tu kit está listo", "P3",
+            PlaceholderScreen("Your kit is ready", "P3",
                 onNext = { navController.navigate(Screen.Home.route) },
-                nextLabel = "Ir a la app")
+                nextLabel = "Go to app")
         }
 
-        // ---------- App principal ----------
+        // ---------- Main app ----------
         composable(Screen.Home.route) {
             PlaceholderScreen("Home", "P4",
                 onNext = { navController.navigate(Screen.Therapy.route) },
-                nextLabel = "Modo Terapia")
+                nextLabel = "Therapy Mode")
         }
         composable(Screen.Therapy.route) {
-            PlaceholderScreen("Modo Terapia", "P4",
+            PlaceholderScreen("Therapy Mode", "P4",
                 onNext = { navController.navigate(Screen.Crisis.route) },
-                nextLabel = "Ir a Crisis")
+                nextLabel = "Go to Crisis")
         }
         composable(Screen.TherapyEnd.route) {
-            PlaceholderScreen("Bien hecho", "P4")
+            PlaceholderScreen("Well done", "P4")
         }
         composable(Screen.Help.route) {
-            PlaceholderScreen("Estás acompañado", "P5")
+            PlaceholderScreen("You're not alone", "P5")
         }
         composable(Screen.Settings.route) {
-            PlaceholderScreen("Configuración", "P1")
+            PlaceholderScreen("Settings", "P1")
         }
         composable(Screen.Paywall.route) {
-            PlaceholderScreen("Planes / Premium", "P6")
+            PlaceholderScreen("Plans / Premium", "P6")
         }
         composable(Screen.Crisis.route) {
             PlaceholderScreen("Crisis", "P5")

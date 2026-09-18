@@ -18,7 +18,7 @@ fun PlaceholderScreen(
     title: String,
     owner: String,
     onNext: (() -> Unit)? = null,
-    nextLabel: String = "Siguiente"
+    nextLabel: String = "Next"
 ) {
     Column(
         modifier = Modifier
