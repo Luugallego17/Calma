@@ -5,6 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.samay.app.ui.paywall.PaywallScreen
 
 @Composable
 fun SamayNavHost(
@@ -53,9 +54,14 @@ fun SamayNavHost(
 
         // ---------- Main app ----------
         composable(Screen.Home.route) {
-            PlaceholderScreen("Home", "P4",
+            PlaceholderScreen(
+                title = "Home",
+                owner = "P4",
                 onNext = { navController.navigate(Screen.Therapy.route) },
-                nextLabel = "Therapy Mode")
+                nextLabel = "Therapy Mode",
+                onSecondary = { navController.navigate(Screen.Paywall.route) },
+                secondaryLabel = "Planes / Premium"
+            )
         }
         composable(Screen.Therapy.route) {
             PlaceholderScreen("Therapy Mode", "P4",
@@ -72,7 +78,10 @@ fun SamayNavHost(
             PlaceholderScreen("Settings", "P1")
         }
         composable(Screen.Paywall.route) {
-            PlaceholderScreen("Plans / Premium", "P6")
+            PaywallScreen(
+                onPromoCodeClick = { /* F5 promo codes */ },
+                onClose = { navController.popBackStack() }
+            )
         }
         composable(Screen.Crisis.route) {
             PlaceholderScreen("Crisis", "P5")
